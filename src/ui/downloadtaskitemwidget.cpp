@@ -19,13 +19,13 @@ DownloadTaskItemWidget::DownloadTaskItemWidget(const QString &fileName,
 
   auto vLayout = new QVBoxLayout();
   vLayout->setSpacing(5);
-  vLayout->setMargin(5);
+  vLayout->setContentsMargins(5, 5, 5, 5);
   vLayout->addWidget(fileNameLabel_);
   vLayout->addWidget(progressBar_);
 
   auto hLayout = new QHBoxLayout(this);
   hLayout->setSpacing(0);
-  hLayout->setMargin(0);
+  hLayout->setContentsMargins(0, 0, 0, 0);
   hLayout->addLayout(vLayout);
   hLayout->addSpacerItem(new QSpacerItem(10, 0, QSizePolicy::Maximum));
   hLayout->addWidget(statusLabel_);

@@ -3,7 +3,6 @@
 AppSettings::AppSettings(QObject *parent) : QObject(parent) {
   auto fileName = qApp->applicationDirPath() + "/config.ini";
   settings_ = new QSettings(fileName, QSettings::IniFormat, this);
-  settings_->setIniCodec("UTF-8");
 }
 
 AppSettings::~AppSettings() {}

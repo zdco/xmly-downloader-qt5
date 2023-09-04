@@ -2,8 +2,6 @@ package main
 
 import "C"
 import (
-	"github.com/cavaliercoder/grab"
-	xmly "github.com/jing332/xmlydownloader"
 	"log"
 	"net/http"
 	"os"
@@ -11,6 +9,9 @@ import (
 	"strings"
 	"time"
 	"unsafe"
+
+	"github.com/cavaliercoder/grab"
+	xmly "github.com/zdco/xmlydownloader"
 )
 
 //#include "cgo.h"
